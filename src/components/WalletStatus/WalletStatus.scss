@@ -1,166 +1,167 @@
-@import 'src/variables';
+@import "src/variables";
 
 .WalletStatus {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $media375) {
+  }
+
+  @media screen and (min-width: $media1024) {
+  }
+
+  @media screen and (min-width: $media1440) {
+  }
+
+  @media screen and (min-width: $media1920) {
+  }
+
+  &__connected {
+    justify-content: space-between;
+
+    .mobile-icon {
+      @media screen and (min-width: $media375) {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      @media screen and (min-width: $media1024) {
+        display: none;
+      }
+    }
+
+    .state {
+      color: #636363;
+
+      @media screen and (min-width: $media375) {
+        display: none;
+      }
+
+      @media screen and (min-width: $media1024) {
+        display: block;
+        font-size: 12px;
+        line-height: 9px;
+      }
+
+      @media screen and (min-width: $media1440) {
+        font-size: 16px;
+        line-height: 14px;
+      }
+
+      @media screen and (min-width: $media1920) {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    .address {
+      color: $primary-color;
+      cursor: pointer;
+
+      @media screen and (min-width: $media375) {
+        font-size: 13px;
+        line-height: 18px;
+        display: none;
+      }
+
+      @media screen and (min-width: $media1024) {
+        font-size: 12px;
+        line-height: 9px;
+        display: block;
+        margin-top: 10px;
+      }
+
+      @media screen and (min-width: $media1440) {
+        font-size: 16px;
+        line-height: 14px;
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: $media1920) {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+
+    .selector {
+      @media screen and (min-width: $media375) {
+        display: none;
+      }
+
+      @media screen and (min-width: $media1440) {
+        margin-left: 15px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__Connect {
+    background: linear-gradient(87.51deg, #1a78c2 12.85%, #f9a412 94.75%);
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 
     @media screen and (min-width: $media375) {
+      width: 148px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 19px;
     }
 
     @media screen and (min-width: $media1024) {
+      width: 126px;
+      height: 29px;
+      font-size: 12px;
+      line-height: 16px;
     }
 
     @media screen and (min-width: $media1440) {
+      width: 126px;
+      height: 33px;
+      font-size: 12px;
+      line-height: 16px;
     }
 
     @media screen and (min-width: $media1920) {
+      width: 148px;
+      height: 38px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__Icon {
+    position: absolute;
+
+    @media screen and (min-width: $media375) {
+      width: 148px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 19px;
     }
 
-    &__connected {
-        justify-content: space-between;
-
-        .mobile-icon {
-            @media screen and (min-width: $media375) {
-                display: inline-block;
-                margin-right: 5px;
-            }
-
-            @media screen and (min-width: $media1024) {
-                display: none;
-            }
-        }
-
-        .state {
-            color: #636363;
-
-            @media screen and (min-width: $media375) {
-                display: none;
-            }
-
-            @media screen and (min-width: $media1024) {
-                display: block;
-                font-size: 12px;
-                line-height: 9px;
-            }
-
-            @media screen and (min-width: $media1440) {
-                font-size: 16px;
-                line-height: 14px;
-            }
-
-            @media screen and (min-width: $media1920) {
-                font-size: 18px;
-                line-height: 25px;
-            }
-        }
-
-        .address {
-            color: $primary-color;
-            cursor: pointer;
-
-            @media screen and (min-width: $media375) {
-                font-size: 13px;
-                line-height: 18px;
-                display: none;
-            }
-
-            @media screen and (min-width: $media1024) {
-                font-size: 12px;
-                line-height: 9px;
-                display: block;
-                margin-top: 10px;
-            }
-
-            @media screen and (min-width: $media1440) {
-                font-size: 16px;
-                line-height: 14px;
-                margin-top: 0;
-            }
-
-            @media screen and (min-width: $media1920) {
-                font-size: 18px;
-                line-height: 25px;
-            }
-        }
-
-        .selector {
-            @media screen and (min-width: $media375) {
-                display: none;
-            }
-
-            @media screen and (min-width: $media1440) {
-                margin-left: 15px;
-                display: inline-block;
-            }
-        }
+    @media screen and (min-width: $media1024) {
+      width: 45px;
+      height: 35px;
+      top: 26px;
+      right: 20px;
     }
 
-    &__Connect {
-        background: linear-gradient(87.51deg, #f74e02 12.85%, #f9a412 94.75%);
-        border-radius: 5px;
-        color: #fff;
-        border: none;
-        text-align: center;
-        cursor: pointer;
-
-        @media screen and (min-width: $media375) {
-            width: 148px;
-            height: 36px;
-            font-size: 14px;
-            line-height: 19px;
-        }
-
-        @media screen and (min-width: $media1024) {
-            width: 126px;
-            height: 29px;
-            font-size: 12px;
-            line-height: 16px;
-        }
-
-        @media screen and (min-width: $media1440) {
-            width: 126px;
-            height: 33px;
-            font-size: 12px;
-            line-height: 16px;
-        }
-
-        @media screen and (min-width: $media1920) {
-            width: 148px;
-            height: 38px;
-            font-size: 12px;
-            line-height: 16px;
-        }
+    @media screen and (min-width: $media1440) {
+      width: 54.5px;
+      height: 43px;
+      top: 32px;
+      right: 20px;
     }
 
-    &__Icon {
-        position: absolute;
-
-        @media screen and (min-width: $media375) {
-            width: 148px;
-            height: 36px;
-            font-size: 14px;
-            line-height: 19px;
-        }
-
-        @media screen and (min-width: $media1024) {
-            width: 45px;
-            height: 35px;
-            top: 26px;
-            right: 20px;
-        }
-
-        @media screen and (min-width: $media1440) {
-            width: 54.5px;
-            height: 43px;
-            top: 32px;
-            right: 20px;
-        }
-
-        @media screen and (min-width: $media1920) {
-            width: 73px;
-            height: 57px;
-            top: 38px;
-            right: 30px;
-        }
+    @media screen and (min-width: $media1920) {
+      width: 73px;
+      height: 57px;
+      top: 38px;
+      right: 30px;
     }
+  }
 }

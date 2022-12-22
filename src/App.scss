@@ -306,7 +306,7 @@ footer {
 }
 
 .zun-button {
-  background: linear-gradient(87.51deg, #f74e02 12.85%, #f9a412 94.75%);
+  background: linear-gradient(87.51deg, #1a78c2 12.85%, #f9a412 94.75%);
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
@@ -394,7 +394,7 @@ input[type="checkbox"] {
 }
 
 .text-primary {
-  --bs-primary-rgb: 246, 74, 0;
+  --bs-primary-rgb: 26, 120, 194;
 }
 
 .text-secondary {
@@ -473,7 +473,7 @@ input[type="checkbox"] {
 
     svg {
       path {
-        fill: rgba(246, 74, 0, 0.53);
+        fill: rgba(26, 120, 194, 0.53);
       }
 
       @media (min-width: $media375) {
@@ -622,12 +622,12 @@ body.dark {
     .NavMenu li.selected {
       background: linear-gradient(
         180deg,
-        rgba(250, 91, 6, 0) 0%,
+        rgba(26, 120, 194, 0) 0%,
         rgba(250, 91, 6, 0.04) 100%
       );
 
       span {
-        color: #f95a05;
+        color: #1a78c2;
       }
     }
 
@@ -807,7 +807,7 @@ body.dark {
 
   #trans-story-mobile-btn {
     span {
-      color: #f64a00 !important;
+      color: #1a78c2 !important;
     }
   }
 

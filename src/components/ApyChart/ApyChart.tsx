@@ -127,7 +127,7 @@ export const ApyChart = (props: ChartProps): JSX.Element => {
             {
                 label: 'APY',
                 data: props.data.map((item) => item.apy),
-                borderColor: '#FA5B06',
+                borderColor: '#1a78c2',
             },
         ],
     };

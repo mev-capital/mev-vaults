@@ -1,201 +1,201 @@
-@import 'src/variables';
+@import "src/variables";
 
 .operation-col {
-    background-color: #fffcf5;
-    border-radius: 5px;
+  background-color: #fffcf5;
+  border-radius: 5px;
 
-    @media screen and (min-width: $media1024) {
-        margin-left: 10px !important;
-        padding: 30px !important;
-    }
+  @media screen and (min-width: $media1024) {
+    margin-left: 10px !important;
+    padding: 30px !important;
+  }
 
-    @media screen and (min-width: $media1440) {
-        margin-left: 0 !important;
-        padding: 32px 42px 32px 62px !important;
-    }
+  @media screen and (min-width: $media1440) {
+    margin-left: 0 !important;
+    padding: 32px 42px 32px 62px !important;
+  }
 
-    @media screen and (min-width: $media1920) {
-        margin-left: 25px !important;
-        padding: 32px 42px 32px 62px !important;
-    }
+  @media screen and (min-width: $media1920) {
+    margin-left: 25px !important;
+    padding: 32px 42px 32px 62px !important;
+  }
 }
 
 .DepositContent {
+  @media screen and (min-width: $media375) {
+    padding: 31px;
+  }
+
+  @media screen and (min-width: $media1024) {
+    padding: 0;
+  }
+
+  &__Title {
+    color: #636363;
+    display: flex;
+    align-items: center;
+
+    svg {
+      @media screen and (min-width: $media375) {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+
+      @media screen and (min-width: $media1024) {
+        margin-right: 12px;
+      }
+
+      @media screen and (min-width: $media1024) {
+        display: none;
+      }
+    }
+
     @media screen and (min-width: $media375) {
-        padding: 31px;
+      font-size: 14px;
+      line-height: 19px;
+      margin: 0 0 24px 1px;
     }
 
     @media screen and (min-width: $media1024) {
-        padding: 0;
+      font-size: 12px;
+      line-height: 16px;
+      margin: 10px 0 24px 1px;
+    }
+
+    @media screen and (min-width: $media1440) {
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 26px;
+    }
+  }
+
+  #trans-story-mobile-btn {
+    font-size: 10px;
+    color: #808080;
+    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    top: 104px;
+    right: 35px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $media375) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $media1024) {
+      display: none;
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+
+    &.active {
+      color: #1a78c2;
+
+      svg {
+        path {
+          fill: #1a78c2;
+        }
+      }
+    }
+  }
+
+  .TransactionHisoryMobile {
+    background: #fff5e9;
+    border-radius: 3px;
+    position: fixed;
+    top: 143px;
+    left: 30px;
+    right: 30px;
+    padding: 20px;
+    z-index: 2;
+    display: none;
+    bottom: 20px;
+
+    @media screen and (min-width: $media375) {
+      &.active {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: $media1024) {
+      display: none;
     }
 
     &__Title {
-        color: #636363;
-        display: flex;
-        align-items: center;
-
-        svg {
-            @media screen and (min-width: $media375) {
-                display: block;
-                width: 16px;
-                height: 16px;
-                margin-right: 5px;
-            }
-
-            @media screen and (min-width: $media1024) {
-                margin-right: 12px;
-            }
-
-            @media screen and (min-width: $media1024) {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: $media375) {
-            font-size: 14px;
-            line-height: 19px;
-            margin: 0 0 24px 1px;
-        }
-
-        @media screen and (min-width: $media1024) {
-            font-size: 12px;
-            line-height: 16px;
-            margin: 10px 0 24px 1px;
-        }
-
-        @media screen and (min-width: $media1440) {
-            margin-top: 0;
-            font-size: 16px;
-            line-height: 22px;
-            margin-bottom: 26px;
-        }
+      font-size: 12px;
+      line-height: 16px;
+      color: #404040;
+      margin: 0 0 20px 0;
     }
 
-    #trans-story-mobile-btn {
-        font-size: 10px;
-        color: #808080;
+    &__Tabs {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      div {
         font-size: 12px;
         line-height: 16px;
-        position: absolute;
-        top: 104px;
-        right: 35px;
+        color: #1a78c2;
+        width: 50%;
+        height: 100%;
+        text-align: center;
         display: flex;
         align-items: center;
-
-        @media screen and (min-width: $media375) {
-            display: flex;
-        }
-
-        @media screen and (min-width: $media1024) {
-            display: none;
-        }
-
-        svg {
-            width: 10px;
-            height: 10px;
-            margin-right: 5px;
-        }
+        justify-content: center;
+        background: #ffefdc;
+        border-radius: 3px;
 
         &.active {
-            color: #f64a00;
-
-            svg {
-                path {
-                    fill: #f64a00;
-                }
-            }
+          background: #fbeedf;
+          color: #bababa;
         }
+      }
     }
 
-    .TransactionHisoryMobile {
-        background: #fff5e9;
-        border-radius: 3px;
-        position: fixed;
-        top: 143px;
-        left: 30px;
-        right: 30px;
-        padding: 20px;
-        z-index: 2;
-        display: none;
-        bottom: 20px;
+    &__Content {
+      .TransactionHistory {
+        display: block;
+        background-color: transparent;
+        border: none;
 
-        @media screen and (min-width: $media375) {
-            &.active {
-                display: block;
-            }
+        th {
+          font-size: 12px;
+          line-height: 16px;
+          height: 37px;
+
+          &:nth-child(3) {
+            text-align: center;
+          }
+
+          &:nth-child(4) {
+            text-align: right;
+          }
         }
 
-        @media screen and (min-width: $media1024) {
-            display: none;
+        td {
+          font-size: 10px;
+          height: 50px;
+
+          &:nth-child(3) {
+            text-align: center;
+          }
+
+          &:nth-child(4) {
+            text-align: right;
+          }
         }
-
-        &__Title {
-            font-size: 12px;
-            line-height: 16px;
-            color: #404040;
-            margin: 0 0 20px 0;
-        }
-
-        &__Tabs {
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-
-            div {
-                font-size: 12px;
-                line-height: 16px;
-                color: #f64a00;
-                width: 50%;
-                height: 100%;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #ffefdc;
-                border-radius: 3px;
-
-                &.active {
-                    background: #fbeedf;
-                    color: #bababa;
-                }
-            }
-        }
-
-        &__Content {
-            .TransactionHistory {
-                display: block;
-                background-color: transparent;
-                border: none;
-
-                th {
-                    font-size: 12px;
-                    line-height: 16px;
-                    height: 37px;
-
-                    &:nth-child(3) {
-                        text-align: center;
-                    }
-
-                    &:nth-child(4) {
-                        text-align: right;
-                    }
-                }
-
-                td {
-                    font-size: 10px;
-                    height: 50px;
-
-                    &:nth-child(3) {
-                        text-align: center;
-                    }
-
-                    &:nth-child(4) {
-                        text-align: right;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

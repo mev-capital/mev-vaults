@@ -82,13 +82,13 @@ export const Header = (): JSX.Element => {
                         >
                             <path
                                 d="M1 19.3848L19.3848 0.99999"
-                                stroke="#F95A05"
+                                stroke="#1a78c2"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                             />
                             <path
                                 d="M1 1L19.3848 19.3848"
-                                stroke="#F95A05"
+                                stroke="#1a78c2"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                             />
@@ -104,13 +104,13 @@ export const Header = (): JSX.Element => {
                         >
                             <path
                                 d="M13.2793 9L34.0002 9"
-                                stroke="#F95A05"
+                                stroke="#1a78c2"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                             />
                             <path
                                 d="M1 1H34"
-                                stroke="#F95A05"
+                                stroke="#1a78c2"
                                 strokeWidth="2"
                                 strokeLinecap="round"
                             />
