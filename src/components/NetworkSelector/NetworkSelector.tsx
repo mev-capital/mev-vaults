@@ -102,7 +102,7 @@ export const NetworkSelector: React.FC<NetworkSelectorProps> = ({
     const [chainSupported, setChainSupported] = useState(false);
     const networksList = customNetworksList ? customNetworksList : networks;
     const availableNetworks = networksList.filter(
-        (item) => [1, 56, 137].indexOf(parseInt(item.key, 16)) !== -1
+        (item) => [1, 5].indexOf(parseInt(item.key, 16)) !== -1
     );
 
     useEffect(() => {
@@ -110,7 +110,7 @@ export const NetworkSelector: React.FC<NetworkSelectorProps> = ({
             return;
         }
 
-        const supportedChainIds = [1, 56, 137];
+        const supportedChainIds = [1, 5];
 
         const defaultNetwork = networks.filter(
             (network) => parseInt(network.key, 16) === chainId

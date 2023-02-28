@@ -3,9 +3,10 @@ import { log } from '../utils/logger';
 import { useWallet } from 'use-wallet';
 
 const ETH_CHAIN_ID: number = 1;
+const GOERLI_CHAIN_ID: number = 5;
 const BSC_CHAIN_ID: number = 56;
 const PLG_CHAIN_ID: number = 137;
-const SUPPORTED_CHAIN_IDS: Array<number> = [ETH_CHAIN_ID, BSC_CHAIN_ID, PLG_CHAIN_ID];
+const SUPPORTED_CHAIN_IDS: Array<number> = [ETH_CHAIN_ID,GOERLI_CHAIN_ID, BSC_CHAIN_ID, PLG_CHAIN_ID];
 
 const useSupportedChain = (): boolean => {
     const [supportedChain, setSupportedChain] = useState(true);

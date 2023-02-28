@@ -54,11 +54,11 @@ const Providers: React.FC = ({ children }) => {
                         },
                     },
                     injected: {
-                        chainId: [1, 3, 4, 10, 56, 100, 137, 250, 1284, 1285, 43114, 42161],
+                        chainId: [1, 3, 4, 5,  10, 56, 100, 137, 250, 1284, 1285, 43114, 42161],
                     },
                     walletlink: {
-                        chainId: 1,
-                        url: 'https://mainnet.eth.aragon.network/',
+                        chainId: 5,
+                        url: 'https://eth-goerli.g.alchemy.com/v2/demo',
                     },
                 }}
             >

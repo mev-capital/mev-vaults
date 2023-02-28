@@ -13,7 +13,7 @@ type Config = {
 let NETWORK = process.env.REACT_APP_NETWORK;
 
 if (!NETWORK) {
-    NETWORK = 'mainnet';
+    NETWORK = 'devnet';
 }
 
 export const getNetworkConfig = (NETWORK: string): Config => {
@@ -21,8 +21,19 @@ export const getNetworkConfig = (NETWORK: string): Config => {
 
     if (NETWORK === 'mainnet') {
         CHAIN_ID = 1;
+    } else if (NETWORK === 'devnet') {
+        CHAIN_ID = 5;
     } else {
         throw new Error(`Unknown ${NETWORK}, permitted only mainnet or mainnet`);
+    }
+
+
+    if (window.ethereum && window.ethereum.chainId === '0x5') {
+        return {
+            INFURA_URL: `https://bscrpc.com`,
+            CHAIN_ID: 56,
+            NETWORK: 'mainnet',
+        };
     }
 
     if (window.ethereum && window.ethereum.chainId === '0x38') {
